@@ -1,0 +1,68 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    height: 10vh;
+    padding: 2.5rem 10rem;
+    text-align: end;
+    vertical-align: middle;
+}
+
+/* main */
+main {
+    height: 85vh;
+    background-color: #7fffd4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    border: 1px solid white;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.cell {
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell.easy {
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+}
+
+.cell.medium {
+    height: calc(100% / 9);
+    width: calc(100% / 9);
+}
+
+.cell.hard {
+    height: calc(100% / 7);
+    width: calc(100% / 7);
+}
+
+.cell span {
+    display: none;
+}
+
+.cell.active {
+    background-color: #6495ed;
+}
+
+.cell.active span {
+    display: block;
+}
