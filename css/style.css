@@ -34,10 +34,16 @@ main {
 }
 
 .cell {
-    border: 1px solid white;
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+    border-right: 4px solid #7b7b7b;
+    border-bottom: 4px solid #7b7b7b;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .cell.easy {
@@ -66,3 +72,50 @@ main {
 .cell.active span {
     display: block;
 }
+
+.hidden {
+    display: none;
+}
+
+.b1 {
+    color: #0000ff; 
+ }
+ .b2 {
+     color: #007b00; 
+  }
+  .b3 {
+     color: #ff0000; 
+  }
+  .b4 {
+     color: #00007b; 
+  }
+  .b5 {
+     color: #7b0000; 
+  }
+  .b6 {
+     color: #007b7b; 
+  }
+  .b7 {
+     color: #000000; 
+  }
+  .b8 {
+     color: #7b7b7b; 
+  }
+ 
+ .cell.active span,
+ .cell.bomb span {
+     display: block;
+ }
+ 
+ .cell.bomb span::before {
+     content: '\01F4A3';
+ }
+ 
+ .cell.flag span {
+     display: block;
+     pointer-events: none;
+ }
+ 
+ .cell.flag span::before {
+     content: '\01F6A9';
+ }
